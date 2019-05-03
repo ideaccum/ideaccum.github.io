@@ -129,6 +129,7 @@ implements java.io.Serializable</pre>
  更新日            更新者                     更新内容
  2010/07/03     Kitagawa                新規作成
  2018/05/02     Kitagawa                再構築(SourceForge.jpからGitHubへの移行に併せて全面改訂)
+ 2019/05/04     Kitagawa                ConfigName継承サブクラスを設置した際にサブクラスを参照する前にgetMapを利用するとキーセットが取得できないため、reflection,jarライブラリを利用して強制的にサブクラスをクラスロードするように修正
 --></dd>
 <dt><span class="seeLabel">関連項目:</span></dt>
 <dd><a href="../../../../../serialized-form.html#org.ideaccum.libs.commons.config.Config">直列化された形式</a></dd>
