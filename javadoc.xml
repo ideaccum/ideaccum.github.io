@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <delete dir="./javadoc/"/>
+        <!-- org.ideaccum.libs.commons -->
+        <javadoc access="protected"
+                 classpath="
+                 ../org.ideaccum.libs.commons/target/classes;
+                 ../org.ideaccum.libs.commons/lib/dom4j-1.6.1.jar;
+                 ../org.ideaccum.libs.commons/lib/zip4j-1.3.2.jar;
+                 ../org.ideaccum.libs.commons/lib/JimiProClasses.jar
+                 "
+                 doctitle="org.ideaccum.libs.commons"
+                 additionalparam="
+                 -windowtitle org.ideaccum.libs.commons 
+                 -notimestamp 
+                 -quiet 
+                 -charset UTF-8 
+                 -encoding UTF-8 
+                 -J-Dfile.encoding=UTF-8 
+                 "
+                 author="true"
+                 nodeprecated="false"
+                 nodeprecatedlist="false"
+                 noindex="false"
+                 nonavbar="false"
+                 notree="false"
+                 source="1.8"
+                 use="true"
+                 version="true"
+                 splitindex="true"
+                 destdir="../org.ideaccum.github.io/javadoc/org.ideaccum.libs.commons"
+                 overview="../org.ideaccum.libs.commons/src/main/java/javadoc-overview.html"
+                 stylesheetfile="../org.ideaccum.libs.commons/src/main/java/javadoc-style.css"
+                 sourcepath="../org.ideaccum.libs.commons/src/main/java;../org.ideaccum.libs.commons/src/main/resources"
+        />
+        <!-- org.ideaccum.libs.commons.config -->
+        <javadoc access="protected"
+                 classpath="
+                 ../org.ideaccum.libs.commons/target/classes;
+                 ../org.ideaccum.libs.commons.config/lib/reflections-0.9.11.jar;
+                 "
+                 doctitle="org.ideaccum.libs.commons.config"
+                 additionalparam="
+                 -windowtitle org.ideaccum.libs.commons.config 
+                 -notimestamp 
+                 -quiet 
+                 -charset UTF-8 
+                 -encoding UTF-8 
+                 -J-Dfile.encoding=UTF-8 
+                 "
+                 author="true"
+                 nodeprecated="false"
+                 nodeprecatedlist="false"
+                 noindex="false"
+                 nonavbar="false"
+                 notree="false"
+                 source="1.8"
+                 use="true"
+                 version="true"
+                 splitindex="true"
+                 destdir="../org.ideaccum.github.io/javadoc/org.ideaccum.libs.commons.config"
+                 overview="../org.ideaccum.libs.commons.config/src/main/java/javadoc-overview.html"
+                 stylesheetfile="../org.ideaccum.libs.commons.config/src/main/java/javadoc-style.css"
+                 sourcepath="../org.ideaccum.libs.commons.config/src/main/java;../org.ideaccum.libs.commons.config/src/main/resources"
+        />
+        <!-- org.ideaccum.libs.commons.logger -->
+        <javadoc access="protected"
+                 classpath="
+                 ../org.ideaccum.libs.commons/target/classes;
+                 ../org.ideaccum.libs.commons.message/target/classes;
+                 ../org.ideaccum.libs.commons.logger/target/classes;
+                 ../org.ideaccum.libs.commons.logger/lib/slf4j-api-1.7.25.jar;
+                 ../org.ideaccum.libs.commons.logger/lib/logback-classic-1.2.3.jar;
+                 ../org.ideaccum.libs.commons.logger/lib/logback-core-1.2.3.jar;
+                 "
+                 doctitle="org.ideaccum.libs.commons.message"
+                 additionalparam="
+                 -windowtitle org.ideaccum.libs.commons.message 
+                 -notimestamp 
+                 -quiet 
+                 -charset UTF-8 
+                 -encoding UTF-8 
+                 -J-Dfile.encoding=UTF-8 
+                 "
+                 author="true"
+                 nodeprecated="false"
+                 nodeprecatedlist="false"
+                 noindex="false"
+                 nonavbar="false"
+                 notree="false"
+                 source="1.8"
+                 use="true"
+                 version="true"
+                 splitindex="true"
+                 destdir="../org.ideaccum.github.io/javadoc/org.ideaccum.libs.commons.logger"
+                 overview="../org.ideaccum.libs.commons.logger/src/main/java/javadoc-overview.html"
+                 stylesheetfile="../org.ideaccum.libs.commons.logger/src/main/java/javadoc-style.css"
+                 sourcepath="../org.ideaccum.libs.commons.logger/src/main/java;../org.ideaccum.libs.commons.logger/src/main/resources"
+        />
+        <!-- org.ideaccum.libs.commons.message -->
+        <javadoc access="protected"
+                 classpath="
+                 ../org.ideaccum.libs.commons/target/classes;
+                 ../org.ideaccum.libs.commons.message/target/classes;
+                 "
+                 doctitle="org.ideaccum.libs.commons.message"
+                 additionalparam="
+                 -windowtitle org.ideaccum.libs.commons.message 
+                 -notimestamp 
+                 -quiet 
+                 -charset UTF-8 
+                 -encoding UTF-8 
+                 -J-Dfile.encoding=UTF-8 
+                 "
+                 author="true"
+                 nodeprecated="false"
+                 nodeprecatedlist="false"
+                 noindex="false"
+                 nonavbar="false"
+                 notree="false"
+                 source="1.8"
+                 use="true"
+                 version="true"
+                 splitindex="true"
+                 destdir="../org.ideaccum.github.io/javadoc/org.ideaccum.libs.commons.message"
+                 overview="../org.ideaccum.libs.commons.message/src/main/java/javadoc-overview.html"
+                 stylesheetfile="../org.ideaccum.libs.commons.message/src/main/java/javadoc-style.css"
+                 sourcepath="../org.ideaccum.libs.commons.message/src/main/java;../org.ideaccum.libs.commons.message/src/main/resources"
+        />
+        <!-- org.ideaccum.union -->
+        <javadoc access="protected"
+                 classpath="
+                 ../org.ideaccum.libs.commons/target/classes;
+                 ../org.ideaccum.libs.commons.config/target/classes;
+                 ../org.ideaccum.libs.commons.logger/target/classes;
+                 ../org.ideaccum.libs.commons.message/target/classes;
+                 ../org.ideaccum.union/target/classes;
+                 ../org.ideaccum.union/lib/commons-codec-1.10.jar;
+                 ../org.ideaccum.union/lib/ccommons-logging-1.2.jar;
+                 ../org.ideaccum.union/lib/guava-20.0.jar;
+                 ../org.ideaccum.union/lib/httpclient-4.5.6.jar;
+                 ../org.ideaccum.union/lib/httpcore-4.4.10.jar;
+                 ../org.ideaccum.union/lib/javassist-3.21.0-GA.jar;
+                 ../org.ideaccum.union/lib/reflections-0.9.11.jar;
+                 ../org.ideaccum.union/lib-ex/javax.servlet-api-4.0.1.jar;
+                 ../org.ideaccum.union/lib-ex/javax.servlet.jsp-api-2.3.0.jar;
+                 "
+                 doctitle="org.ideaccum.union"
+                 additionalparam="
+                 -windowtitle org.ideaccum.union 
+                 -notimestamp 
+                 -quiet 
+                 -charset UTF-8 
+                 -encoding UTF-8 
+                 -J-Dfile.encoding=UTF-8 
+                 "
+                 author="true"
+                 nodeprecated="false"
+                 nodeprecatedlist="false"
+                 noindex="false"
+                 nonavbar="false"
+                 notree="false"
+                 source="1.8"
+                 use="true"
+                 version="true"
+                 splitindex="true"
+                 destdir="../org.ideaccum.github.io/javadoc/org.ideaccum.union"
+                 overview="../org.ideaccum.union/src/main/java/javadoc-overview.html"
+                 stylesheetfile="../org.ideaccum.union/src/main/java/javadoc-style.css"
+                 sourcepath="../org.ideaccum.union/src/main/java;../org.ideaccum.union/src/main/resources"
+        />
+        <!-- org.ideaccum.union.controller.basic -->
+        <javadoc access="protected"
+                 classpath="
+                 ../org.ideaccum.libs.commons/target/classes;
+                 ../org.ideaccum.libs.commons.config/target/classes;
+                 ../org.ideaccum.libs.commons.logger/target/classes;
+                 ../org.ideaccum.libs.commons.message/target/classes;
+                 ../org.ideaccum.union/target/classes;
+                 ../org.ideaccum.union/lib-ex/javax.servlet-api-4.0.1.jar;
+                 ../org.ideaccum.union/lib-ex/javax.servlet.jsp-api-2.3.0.jar;
+                 ../org.ideaccum.union.controller.basic/lib/jackson-annotations-2.9.8.jar;
+                 ../org.ideaccum.union.controller.basic/lib/jackson-core-2.9.8.jar;
+                 ../org.ideaccum.union.controller.basic/lib/jackson-databind-2.9.8.jar;
+                 "
+                 doctitle="org.ideaccum.union.controller.basic"
+                 additionalparam="
+                 -windowtitle org.ideaccum.union.controller.basic 
+                 -notimestamp 
+                 -quiet 
+                 -charset UTF-8 
+                 -encoding UTF-8 
+                 -J-Dfile.encoding=UTF-8 
+                 "
+                 author="true"
+                 nodeprecated="false"
+                 nodeprecatedlist="false"
+                 noindex="false"
+                 nonavbar="false"
+                 notree="false"
+                 source="1.8"
+                 use="true"
+                 version="true"
+                 splitindex="true"
+                 destdir="../org.ideaccum.github.io/javadoc/org.ideaccum.union.controller.basic"
+                 overview="../org.ideaccum.union.controller.basic/src/main/java/javadoc-overview.html"
+                 stylesheetfile="../org.ideaccum.union.controller.basic/src/main/java/javadoc-style.css"
+                 sourcepath="../org.ideaccum.union.controller.basic/src/main/java;../org.ideaccum.union.controller.basic/src/main/resources"
+        />
+        <!-- org.ideaccum.union.ui.bootstrap4 -->
+        <javadoc access="protected"
+                 classpath="
+                 ../org.ideaccum.libs.commons/target/classes;
+                 ../org.ideaccum.libs.commons.config/target/classes;
+                 ../org.ideaccum.libs.commons.logger/target/classes;
+                 ../org.ideaccum.libs.commons.message/target/classes;
+                 ../org.ideaccum.union/target/classes;
+                 ../org.ideaccum.union/lib-ex/javax.servlet-api-4.0.1.jar;
+                 ../org.ideaccum.union/lib-ex/javax.servlet.jsp-api-2.3.0.jar;
+                 ../org.ideaccum.union.controller.basic/target/classes;
+                 "
+                 doctitle="org.ideaccum.union.ui.bootstrap4"
+                 additionalparam="
+                 -windowtitle org.ideaccum.union.ui.bootstrap4
+                 -notimestamp 
+                 -quiet 
+                 -charset UTF-8 
+                 -encoding UTF-8 
+                 -J-Dfile.encoding=UTF-8 
+                 "
+                 author="true"
+                 nodeprecated="false"
+                 nodeprecatedlist="false"
+                 noindex="false"
+                 nonavbar="false"
+                 notree="false"
+                 source="1.8"
+                 use="true"
+                 version="true"
+                 splitindex="true"
+                 destdir="../org.ideaccum.github.io/javadoc/org.ideaccum.union.ui.bootstrap4"
+                 overview="../org.ideaccum.union.ui.bootstrap4/src/main/java/javadoc-overview.html"
+                 stylesheetfile="../org.ideaccum.union.ui.bootstrap4/src/main/java/javadoc-style.css"
+                 sourcepath="../org.ideaccum.union.ui.bootstrap4/src/main/java;../org.ideaccum.union.ui.bootstrap4/src/main/resources"
+        />
+    </target>
+</project>

@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6};
-var tabs = {65535:["t0","すべてのメソッド"],2:["t2","インスタンス・メソッド"],4:["t3","abstractメソッド"]};
+var methods = {"i0":38,"i1":38,"i2":38,"i3":38,"i4":38,"i5":6,"i6":6,"i7":6,"i8":6};
+var tabs = {65535:["t0","すべてのメソッド"],2:["t2","インスタンス・メソッド"],4:["t3","abstractメソッド"],32:["t6","非推奨のメソッド"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -118,6 +118,7 @@ var activeTableTab = "activeTableTab";
 <!--
  更新日            更新者                     更新内容
  2018/06/13     Kitagawa                新規作成
+ 2019/05/06     Kitagawa                is***Enabledメソッドをインタフェース側にプルアップ
 --></dd>
 </dl>
 </li>
@@ -133,32 +134,72 @@ var activeTableTab = "activeTableTab";
 </a>
 <h3>メソッドのサマリー</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="メソッドのサマリー表、メソッドのリストおよび説明">
-<caption><span id="t0" class="activeTableTab"><span>すべてのメソッド</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">インスタンス・メソッド</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">abstractメソッド</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>すべてのメソッド</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">インスタンス・メソッド</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">abstractメソッド</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">非推奨のメソッド</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">修飾子とタイプ</th>
 <th class="colLast" scope="col">メソッドと説明</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html#isDebugEnabled--">isDebugEnabled</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">非推奨です。</span>&nbsp;
+<div class="block"><span class="deprecationComment">メッセージコードによる動的レベル決定による実装不整合を避けるため、原則は利用禁止です(API仕様の注意事項を理解の上で利用してください)。</span></div>
+</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html#isErrorEnabled--">isErrorEnabled</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">非推奨です。</span>&nbsp;
+<div class="block"><span class="deprecationComment">メッセージコードによる動的レベル決定による実装不整合を避けるため、原則は利用禁止です(API仕様の注意事項を理解の上で利用してください)。</span></div>
+</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html#isInfoEnabled--">isInfoEnabled</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">非推奨です。</span>&nbsp;
+<div class="block"><span class="deprecationComment">メッセージコードによる動的レベル決定による実装不整合を避けるため、原則は利用禁止です(API仕様の注意事項を理解の上で利用してください)。</span></div>
+</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html#isTraceEnabled--">isTraceEnabled</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">非推奨です。</span>&nbsp;
+<div class="block"><span class="deprecationComment">メッセージコードによる動的レベル決定による実装不整合を避けるため、原則は利用禁止です(API仕様の注意事項を理解の上で利用してください)。</span></div>
+</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html#isWarnEnabled--">isWarnEnabled</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">非推奨です。</span>&nbsp;
+<div class="block"><span class="deprecationComment">メッセージコードによる動的レベル決定による実装不整合を避けるため、原則は利用禁止です(API仕様の注意事項を理解の上で利用してください)。</span></div>
+</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html#output-java.lang.String-">output</a></span>(java.lang.String&nbsp;code)</code>
 <div class="block">メッセージコードで定義されたメッセージに対して必要なバインド内容をバインドしてログ出力を行います。</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html#output-java.lang.String-java.lang.Object...-">output</a></span>(java.lang.String&nbsp;code,
       java.lang.Object...&nbsp;binds)</code>
 <div class="block">メッセージコードで定義されたメッセージに対して必要なバインド内容をバインドしてログ出力を行います。</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html#output-java.lang.String-java.lang.Throwable-">output</a></span>(java.lang.String&nbsp;code,
       java.lang.Throwable&nbsp;e)</code>
 <div class="block">メッセージコードで定義されたメッセージに対して必要なバインド内容をバインドしてログ出力を行います。</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html#output-java.lang.String-java.lang.Throwable-java.lang.Object...-">output</a></span>(java.lang.String&nbsp;code,
       java.lang.Throwable&nbsp;e,
@@ -181,6 +222,101 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <h3>メソッドの詳細</h3>
+<a name="isDebugEnabled--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isDebugEnabled</h4>
+<pre>boolean&nbsp;isDebugEnabled()</pre>
+<div class="block"><span class="deprecatedLabel">非推奨です。</span>&nbsp;<span class="deprecationComment">メッセージコードによる動的レベル決定による実装不整合を避けるため、原則は利用禁止です(API仕様の注意事項を理解の上で利用してください)。</span></div>
+<div class="block">デバッグレベルロギングが有効であるか判定します。<br>
+ メッセージコードによる動的レベル決定のため、このメソッドは基本的には利用しませんが、バインドメッセージ構築で負荷がかかる場合などにおいて例外的な利用の目的で用意されています。<br>
+ 実際の定義メッセージレベルとの整合性に注意して利用してください。<br></div>
+<dl>
+<dt><span class="returnLabel">戻り値:</span></dt>
+<dd>有効な場合にtrueを返却</dd>
+<dt><span class="seeLabel">関連項目:</span></dt>
+<dd><code>Logger.isDebugEnabled()</code></dd>
+</dl>
+</li>
+</ul>
+<a name="isErrorEnabled--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isErrorEnabled</h4>
+<pre>boolean&nbsp;isErrorEnabled()</pre>
+<div class="block"><span class="deprecatedLabel">非推奨です。</span>&nbsp;<span class="deprecationComment">メッセージコードによる動的レベル決定による実装不整合を避けるため、原則は利用禁止です(API仕様の注意事項を理解の上で利用してください)。</span></div>
+<div class="block">エラーレベルロギングが有効であるか判定します。<br>
+ メッセージコードによる動的レベル決定のため、このメソッドは基本的には利用しませんが、バインドメッセージ構築で負荷がかかる場合などにおいて例外的な利用の目的で用意されています。<br>
+ 実際の定義メッセージレベルとの整合性に注意して利用してください。<br></div>
+<dl>
+<dt><span class="returnLabel">戻り値:</span></dt>
+<dd>有効な場合にtrueを返却</dd>
+<dt><span class="seeLabel">関連項目:</span></dt>
+<dd><code>Logger.isErrorEnabled()</code></dd>
+</dl>
+</li>
+</ul>
+<a name="isInfoEnabled--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isInfoEnabled</h4>
+<pre>boolean&nbsp;isInfoEnabled()</pre>
+<div class="block"><span class="deprecatedLabel">非推奨です。</span>&nbsp;<span class="deprecationComment">メッセージコードによる動的レベル決定による実装不整合を避けるため、原則は利用禁止です(API仕様の注意事項を理解の上で利用してください)。</span></div>
+<div class="block">情報レベルロギングが有効であるか判定します。<br>
+ メッセージコードによる動的レベル決定のため、このメソッドは基本的には利用しませんが、バインドメッセージ構築で負荷がかかる場合などにおいて例外的な利用の目的で用意されています。<br>
+ 実際の定義メッセージレベルとの整合性に注意して利用してください。<br></div>
+<dl>
+<dt><span class="returnLabel">戻り値:</span></dt>
+<dd>有効な場合にtrueを返却</dd>
+<dt><span class="seeLabel">関連項目:</span></dt>
+<dd><code>Logger.isInfoEnabled()</code></dd>
+</dl>
+</li>
+</ul>
+<a name="isTraceEnabled--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isTraceEnabled</h4>
+<pre>boolean&nbsp;isTraceEnabled()</pre>
+<div class="block"><span class="deprecatedLabel">非推奨です。</span>&nbsp;<span class="deprecationComment">メッセージコードによる動的レベル決定による実装不整合を避けるため、原則は利用禁止です(API仕様の注意事項を理解の上で利用してください)。</span></div>
+<div class="block">トレースレベルロギングが有効であるか判定します。<br>
+ メッセージコードによる動的レベル決定のため、このメソッドは基本的には利用しませんが、バインドメッセージ構築で負荷がかかる場合などにおいて例外的な利用の目的で用意されています。<br>
+ 実際の定義メッセージレベルとの整合性に注意して利用してください。<br></div>
+<dl>
+<dt><span class="returnLabel">戻り値:</span></dt>
+<dd>有効な場合にtrueを返却</dd>
+<dt><span class="seeLabel">関連項目:</span></dt>
+<dd><code>Logger.isTraceEnabled()</code></dd>
+</dl>
+</li>
+</ul>
+<a name="isWarnEnabled--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isWarnEnabled</h4>
+<pre>boolean&nbsp;isWarnEnabled()</pre>
+<div class="block"><span class="deprecatedLabel">非推奨です。</span>&nbsp;<span class="deprecationComment">メッセージコードによる動的レベル決定による実装不整合を避けるため、原則は利用禁止です(API仕様の注意事項を理解の上で利用してください)。</span></div>
+<div class="block">警告レベルロギングが有効であるか判定します。<br>
+ メッセージコードによる動的レベル決定のため、このメソッドは基本的には利用しませんが、バインドメッセージ構築で負荷がかかる場合などにおいて例外的な利用の目的で用意されています。<br>
+ 実際の定義メッセージレベルとの整合性に注意して利用してください。<br></div>
+<dl>
+<dt><span class="returnLabel">戻り値:</span></dt>
+<dd>有効な場合にtrueを返却</dd>
+<dt><span class="seeLabel">関連項目:</span></dt>
+<dd><code>Logger.isWarnEnabled()</code></dd>
+</dl>
+</li>
+</ul>
 <a name="output-java.lang.String-java.lang.Throwable-java.lang.Object...-">
 <!--   -->
 </a>

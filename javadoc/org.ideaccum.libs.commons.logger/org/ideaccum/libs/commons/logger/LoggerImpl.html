@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
-var tabs = {65535:["t0","すべてのメソッド"],2:["t2","インスタンス・メソッド"],8:["t4","concreteメソッド"]};
+var methods = {"i0":42,"i1":42,"i2":42,"i3":42,"i4":42,"i5":10,"i6":10,"i7":10,"i8":10};
+var tabs = {65535:["t0","すべてのメソッド"],2:["t2","インスタンス・メソッド"],8:["t4","concreteメソッド"],32:["t6","非推奨のメソッド"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -128,6 +128,7 @@ implements <a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html"
 <!--
  更新日            更新者                     更新内容
  2018/06/13     Kitagawa                新規作成
+ 2019/05/06     Kitagawa                is***Enabledメソッドをインタフェース側にプルアップ
 --></dd>
 </dl>
 </li>
@@ -164,7 +165,7 @@ implements <a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html"
 </a>
 <h3>メソッドのサマリー</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="メソッドのサマリー表、メソッドのリストおよび説明">
-<caption><span id="t0" class="activeTableTab"><span>すべてのメソッド</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">インスタンス・メソッド</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">concreteメソッド</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>すべてのメソッド</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">インスタンス・メソッド</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">concreteメソッド</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">非推奨のメソッド</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">修飾子とタイプ</th>
 <th class="colLast" scope="col">メソッドと説明</th>
@@ -172,31 +173,41 @@ implements <a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html"
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/libs/commons/logger/LoggerImpl.html#isDebugEnabled--">isDebugEnabled</a></span>()</code>
-<div class="block">デバッグレベルロギングが有効であるか判定します。</div>
+<div class="block"><span class="deprecatedLabel">非推奨です。</span>&nbsp;
+<div class="block"><span class="deprecationComment">メッセージコードによる動的レベル決定による実装不整合を避けるため、原則は利用禁止です(API仕様の注意事項を理解の上で利用してください)。</span></div>
+</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/libs/commons/logger/LoggerImpl.html#isErrorEnabled--">isErrorEnabled</a></span>()</code>
-<div class="block">エラーレベルロギングが有効であるか判定します。</div>
+<div class="block"><span class="deprecatedLabel">非推奨です。</span>&nbsp;
+<div class="block"><span class="deprecationComment">メッセージコードによる動的レベル決定による実装不整合を避けるため、原則は利用禁止です(API仕様の注意事項を理解の上で利用してください)。</span></div>
+</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/libs/commons/logger/LoggerImpl.html#isInfoEnabled--">isInfoEnabled</a></span>()</code>
-<div class="block">情報レベルロギングが有効であるか判定します。</div>
+<div class="block"><span class="deprecatedLabel">非推奨です。</span>&nbsp;
+<div class="block"><span class="deprecationComment">メッセージコードによる動的レベル決定による実装不整合を避けるため、原則は利用禁止です(API仕様の注意事項を理解の上で利用してください)。</span></div>
+</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/libs/commons/logger/LoggerImpl.html#isTraceEnabled--">isTraceEnabled</a></span>()</code>
-<div class="block">トレースレベルロギングが有効であるか判定します。</div>
+<div class="block"><span class="deprecatedLabel">非推奨です。</span>&nbsp;
+<div class="block"><span class="deprecationComment">メッセージコードによる動的レベル決定による実装不整合を避けるため、原則は利用禁止です(API仕様の注意事項を理解の上で利用してください)。</span></div>
+</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/libs/commons/logger/LoggerImpl.html#isWarnEnabled--">isWarnEnabled</a></span>()</code>
-<div class="block">警告レベルロギングが有効であるか判定します。</div>
+<div class="block"><span class="deprecatedLabel">非推奨です。</span>&nbsp;
+<div class="block"><span class="deprecationComment">メッセージコードによる動的レベル決定による実装不整合を避けるため、原則は利用禁止です(API仕様の注意事項を理解の上で利用してください)。</span></div>
+</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -278,12 +289,18 @@ implements <a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html"
 <li class="blockList">
 <h4>isDebugEnabled</h4>
 <pre>public final&nbsp;boolean&nbsp;isDebugEnabled()</pre>
-<div class="block">デバッグレベルロギングが有効であるか判定します。<br></div>
+<div class="block"><span class="deprecatedLabel">非推奨です。</span>&nbsp;<span class="deprecationComment">メッセージコードによる動的レベル決定による実装不整合を避けるため、原則は利用禁止です(API仕様の注意事項を理解の上で利用してください)。</span></div>
+<div class="block">デバッグレベルロギングが有効であるか判定します。<br>
+ メッセージコードによる動的レベル決定のため、このメソッドは基本的には利用しませんが、バインドメッセージ構築で負荷がかかる場合などにおいて例外的な利用の目的で用意されています。<br>
+ 実際の定義メッセージレベルとの整合性に注意して利用してください。<br></div>
 <dl>
+<dt><span class="overrideSpecifyLabel">定義:</span></dt>
+<dd><code><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html#isDebugEnabled--">isDebugEnabled</a></code>&nbsp;インタフェース内&nbsp;<code><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html" title="org.ideaccum.libs.commons.logger内のインタフェース">Logger</a></code></dd>
 <dt><span class="returnLabel">戻り値:</span></dt>
 <dd>有効な場合にtrueを返却</dd>
 <dt><span class="seeLabel">関連項目:</span></dt>
-<dd><code>Logger.isDebugEnabled()</code></dd>
+<dd><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html#isDebugEnabled--"><code>Logger.isDebugEnabled()</code></a>, 
+<code>Logger.isDebugEnabled()</code></dd>
 </dl>
 </li>
 </ul>
@@ -294,12 +311,18 @@ implements <a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html"
 <li class="blockList">
 <h4>isErrorEnabled</h4>
 <pre>public final&nbsp;boolean&nbsp;isErrorEnabled()</pre>
-<div class="block">エラーレベルロギングが有効であるか判定します。<br></div>
+<div class="block"><span class="deprecatedLabel">非推奨です。</span>&nbsp;<span class="deprecationComment">メッセージコードによる動的レベル決定による実装不整合を避けるため、原則は利用禁止です(API仕様の注意事項を理解の上で利用してください)。</span></div>
+<div class="block">エラーレベルロギングが有効であるか判定します。<br>
+ メッセージコードによる動的レベル決定のため、このメソッドは基本的には利用しませんが、バインドメッセージ構築で負荷がかかる場合などにおいて例外的な利用の目的で用意されています。<br>
+ 実際の定義メッセージレベルとの整合性に注意して利用してください。<br></div>
 <dl>
+<dt><span class="overrideSpecifyLabel">定義:</span></dt>
+<dd><code><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html#isErrorEnabled--">isErrorEnabled</a></code>&nbsp;インタフェース内&nbsp;<code><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html" title="org.ideaccum.libs.commons.logger内のインタフェース">Logger</a></code></dd>
 <dt><span class="returnLabel">戻り値:</span></dt>
 <dd>有効な場合にtrueを返却</dd>
 <dt><span class="seeLabel">関連項目:</span></dt>
-<dd><code>Logger.isErrorEnabled()</code></dd>
+<dd><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html#isErrorEnabled--"><code>Logger.isErrorEnabled()</code></a>, 
+<code>Logger.isErrorEnabled()</code></dd>
 </dl>
 </li>
 </ul>
@@ -310,12 +333,18 @@ implements <a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html"
 <li class="blockList">
 <h4>isInfoEnabled</h4>
 <pre>public final&nbsp;boolean&nbsp;isInfoEnabled()</pre>
-<div class="block">情報レベルロギングが有効であるか判定します。<br></div>
+<div class="block"><span class="deprecatedLabel">非推奨です。</span>&nbsp;<span class="deprecationComment">メッセージコードによる動的レベル決定による実装不整合を避けるため、原則は利用禁止です(API仕様の注意事項を理解の上で利用してください)。</span></div>
+<div class="block">情報レベルロギングが有効であるか判定します。<br>
+ メッセージコードによる動的レベル決定のため、このメソッドは基本的には利用しませんが、バインドメッセージ構築で負荷がかかる場合などにおいて例外的な利用の目的で用意されています。<br>
+ 実際の定義メッセージレベルとの整合性に注意して利用してください。<br></div>
 <dl>
+<dt><span class="overrideSpecifyLabel">定義:</span></dt>
+<dd><code><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html#isInfoEnabled--">isInfoEnabled</a></code>&nbsp;インタフェース内&nbsp;<code><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html" title="org.ideaccum.libs.commons.logger内のインタフェース">Logger</a></code></dd>
 <dt><span class="returnLabel">戻り値:</span></dt>
 <dd>有効な場合にtrueを返却</dd>
 <dt><span class="seeLabel">関連項目:</span></dt>
-<dd><code>Logger.isInfoEnabled()</code></dd>
+<dd><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html#isInfoEnabled--"><code>Logger.isInfoEnabled()</code></a>, 
+<code>Logger.isInfoEnabled()</code></dd>
 </dl>
 </li>
 </ul>
@@ -326,12 +355,18 @@ implements <a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html"
 <li class="blockList">
 <h4>isTraceEnabled</h4>
 <pre>public final&nbsp;boolean&nbsp;isTraceEnabled()</pre>
-<div class="block">トレースレベルロギングが有効であるか判定します。<br></div>
+<div class="block"><span class="deprecatedLabel">非推奨です。</span>&nbsp;<span class="deprecationComment">メッセージコードによる動的レベル決定による実装不整合を避けるため、原則は利用禁止です(API仕様の注意事項を理解の上で利用してください)。</span></div>
+<div class="block">トレースレベルロギングが有効であるか判定します。<br>
+ メッセージコードによる動的レベル決定のため、このメソッドは基本的には利用しませんが、バインドメッセージ構築で負荷がかかる場合などにおいて例外的な利用の目的で用意されています。<br>
+ 実際の定義メッセージレベルとの整合性に注意して利用してください。<br></div>
 <dl>
+<dt><span class="overrideSpecifyLabel">定義:</span></dt>
+<dd><code><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html#isTraceEnabled--">isTraceEnabled</a></code>&nbsp;インタフェース内&nbsp;<code><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html" title="org.ideaccum.libs.commons.logger内のインタフェース">Logger</a></code></dd>
 <dt><span class="returnLabel">戻り値:</span></dt>
 <dd>有効な場合にtrueを返却</dd>
 <dt><span class="seeLabel">関連項目:</span></dt>
-<dd><code>Logger.isTraceEnabled()</code></dd>
+<dd><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html#isTraceEnabled--"><code>Logger.isTraceEnabled()</code></a>, 
+<code>Logger.isTraceEnabled()</code></dd>
 </dl>
 </li>
 </ul>
@@ -342,12 +377,18 @@ implements <a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html"
 <li class="blockList">
 <h4>isWarnEnabled</h4>
 <pre>public final&nbsp;boolean&nbsp;isWarnEnabled()</pre>
-<div class="block">警告レベルロギングが有効であるか判定します。<br></div>
+<div class="block"><span class="deprecatedLabel">非推奨です。</span>&nbsp;<span class="deprecationComment">メッセージコードによる動的レベル決定による実装不整合を避けるため、原則は利用禁止です(API仕様の注意事項を理解の上で利用してください)。</span></div>
+<div class="block">警告レベルロギングが有効であるか判定します。<br>
+ メッセージコードによる動的レベル決定のため、このメソッドは基本的には利用しませんが、バインドメッセージ構築で負荷がかかる場合などにおいて例外的な利用の目的で用意されています。<br>
+ 実際の定義メッセージレベルとの整合性に注意して利用してください。<br></div>
 <dl>
+<dt><span class="overrideSpecifyLabel">定義:</span></dt>
+<dd><code><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html#isWarnEnabled--">isWarnEnabled</a></code>&nbsp;インタフェース内&nbsp;<code><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html" title="org.ideaccum.libs.commons.logger内のインタフェース">Logger</a></code></dd>
 <dt><span class="returnLabel">戻り値:</span></dt>
 <dd>有効な場合にtrueを返却</dd>
 <dt><span class="seeLabel">関連項目:</span></dt>
-<dd><code>Logger.isWarnEnabled()</code></dd>
+<dd><a href="../../../../../org/ideaccum/libs/commons/logger/Logger.html#isTraceEnabled--"><code>Logger.isTraceEnabled()</code></a>, 
+<code>Logger.isWarnEnabled()</code></dd>
 </dl>
 </li>
 </ul>
