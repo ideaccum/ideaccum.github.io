@@ -95,7 +95,7 @@
 <li class="blockList">
 <dl>
 <dt>既知の実装クラスのリスト:</dt>
-<dd><a href="../../../../../org/ideaccum/union/controller/basic/processor/RequestContext.html" title="org.ideaccum.union.controller.basic.processor内のクラス">RequestContext</a>, <a href="../../../../../org/ideaccum/union/controller/basic/processor/RequestProcessor.html" title="org.ideaccum.union.controller.basic.processor内のクラス">RequestProcessor</a>, <a href="../../../../../org/ideaccum/union/controller/basic/processor/RequestProcessorUtil.html" title="org.ideaccum.union.controller.basic.processor内のクラス">RequestProcessorUtil</a></dd>
+<dd><a href="../../../../../org/ideaccum/union/controller/basic/taglib/HeadTag.html" title="org.ideaccum.union.controller.basic.taglib内のクラス">HeadTag</a>, <a href="../../../../../org/ideaccum/union/controller/basic/taglib/HtmlTag.html" title="org.ideaccum.union.controller.basic.taglib内のクラス">HtmlTag</a>, <a href="../../../../../org/ideaccum/union/controller/basic/processor/RequestContext.html" title="org.ideaccum.union.controller.basic.processor内のクラス">RequestContext</a>, <a href="../../../../../org/ideaccum/union/controller/basic/processor/RequestProcessor.html" title="org.ideaccum.union.controller.basic.processor内のクラス">RequestProcessor</a>, <a href="../../../../../org/ideaccum/union/controller/basic/processor/RequestProcessorUtil.html" title="org.ideaccum.union.controller.basic.processor内のクラス">RequestProcessorUtil</a></dd>
 </dl>
 <hr>
 <br>
@@ -141,35 +141,65 @@ public interface <span class="typeNameLabel">UnionControllerBasicConstants</span
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/union/controller/basic/UnionControllerBasicConstants.html#REQPARAM_JSONDATA">REQPARAM_JSONDATA</a></span></code>
-<div class="block">リクエストパラメータ名(JSONデータコンテナ)</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/union/controller/basic/UnionControllerBasicConstants.html#EATTR_UNION_FUNCTION">EATTR_UNION_FUNCTION</a></span></code>
+<div class="block">要素属性(対象機能名)</div>
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/union/controller/basic/UnionControllerBasicConstants.html#EATTR_UNION_TYPE">EATTR_UNION_TYPE</a></span></code>
+<div class="block">要素属性(要素タイプ)</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/union/controller/basic/UnionControllerBasicConstants.html#RATTR_SESSION">RATTR_SESSION</a></span></code>
+<div class="block">リクエストアトリビュート(セッションコンテナ)</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/union/controller/basic/UnionControllerBasicConstants.html#RPARAM_JSONDATA">RPARAM_JSONDATA</a></span></code>
+<div class="block">リクエストパラメータ名(JSONデータコンテナ)</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/union/controller/basic/UnionControllerBasicConstants.html#SCRIPT_REQUEST_METHOD">SCRIPT_REQUEST_METHOD</a></span></code>
+<div class="block">スクリプト定数(リクエストメソッド)</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/union/controller/basic/UnionControllerBasicConstants.html#SCRIPT_REQUEST_TIMEOUT">SCRIPT_REQUEST_TIMEOUT</a></span></code>
+<div class="block">スクリプト定数(リクエストタイムアウト)</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/union/controller/basic/UnionControllerBasicConstants.html#UNION_ACTION_CLASSNAME_SUFFIX">UNION_ACTION_CLASSNAME_SUFFIX</a></span></code>
 <div class="block">クラス命名(アクションクラスサフィックス)</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/union/controller/basic/UnionControllerBasicConstants.html#UNION_ACTIONNAME_DISPLAY">UNION_ACTIONNAME_DISPLAY</a></span></code>
 <div class="block">アクションメソッド命名(単純表示処理)</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/union/controller/basic/UnionControllerBasicConstants.html#UNION_FORM_CLASSNAME_SUFFIX">UNION_FORM_CLASSNAME_SUFFIX</a></span></code>
 <div class="block">クラス命名(フォームクラスサフィックス)</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/union/controller/basic/UnionControllerBasicConstants.html#UNION_LOGIC_CLASSNAME_SUFFIX">UNION_LOGIC_CLASSNAME_SUFFIX</a></span></code>
 <div class="block">クラス命名(ロジッククラスサフィックス)</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/ideaccum/union/controller/basic/UnionControllerBasicConstants.html#UNION_PSID">UNION_PSID</a></span></code>
 <div class="block">プロセスセッションID(Cookieにて利用)</div>
@@ -265,18 +295,93 @@ static final&nbsp;java.lang.String UNION_PSID</pre>
 </dl>
 </li>
 </ul>
-<a name="REQPARAM_JSONDATA">
+<a name="RATTR_SESSION">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RATTR_SESSION</h4>
+<pre>@ConstantsField
+static final&nbsp;java.lang.String RATTR_SESSION</pre>
+<div class="block">リクエストアトリビュート(セッションコンテナ)</div>
+<dl>
+<dt><span class="seeLabel">関連項目:</span></dt>
+<dd><a href="../../../../../constant-values.html#org.ideaccum.union.controller.basic.UnionControllerBasicConstants.RATTR_SESSION">定数フィールド値</a></dd>
+</dl>
+</li>
+</ul>
+<a name="RPARAM_JSONDATA">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RPARAM_JSONDATA</h4>
+<pre>@ConstantsField
+static final&nbsp;java.lang.String RPARAM_JSONDATA</pre>
+<div class="block">リクエストパラメータ名(JSONデータコンテナ)</div>
+<dl>
+<dt><span class="seeLabel">関連項目:</span></dt>
+<dd><a href="../../../../../constant-values.html#org.ideaccum.union.controller.basic.UnionControllerBasicConstants.RPARAM_JSONDATA">定数フィールド値</a></dd>
+</dl>
+</li>
+</ul>
+<a name="SCRIPT_REQUEST_METHOD">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SCRIPT_REQUEST_METHOD</h4>
+<pre>@ConstantsField
+static final&nbsp;java.lang.String SCRIPT_REQUEST_METHOD</pre>
+<div class="block">スクリプト定数(リクエストメソッド)</div>
+<dl>
+<dt><span class="seeLabel">関連項目:</span></dt>
+<dd><a href="../../../../../constant-values.html#org.ideaccum.union.controller.basic.UnionControllerBasicConstants.SCRIPT_REQUEST_METHOD">定数フィールド値</a></dd>
+</dl>
+</li>
+</ul>
+<a name="SCRIPT_REQUEST_TIMEOUT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SCRIPT_REQUEST_TIMEOUT</h4>
+<pre>@ConstantsField
+static final&nbsp;int SCRIPT_REQUEST_TIMEOUT</pre>
+<div class="block">スクリプト定数(リクエストタイムアウト)</div>
+<dl>
+<dt><span class="seeLabel">関連項目:</span></dt>
+<dd><a href="../../../../../constant-values.html#org.ideaccum.union.controller.basic.UnionControllerBasicConstants.SCRIPT_REQUEST_TIMEOUT">定数フィールド値</a></dd>
+</dl>
+</li>
+</ul>
+<a name="EATTR_UNION_TYPE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>EATTR_UNION_TYPE</h4>
+<pre>@ConstantsField
+static final&nbsp;java.lang.String EATTR_UNION_TYPE</pre>
+<div class="block">要素属性(要素タイプ)</div>
+<dl>
+<dt><span class="seeLabel">関連項目:</span></dt>
+<dd><a href="../../../../../constant-values.html#org.ideaccum.union.controller.basic.UnionControllerBasicConstants.EATTR_UNION_TYPE">定数フィールド値</a></dd>
+</dl>
+</li>
+</ul>
+<a name="EATTR_UNION_FUNCTION">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>REQPARAM_JSONDATA</h4>
+<h4>EATTR_UNION_FUNCTION</h4>
 <pre>@ConstantsField
-static final&nbsp;java.lang.String REQPARAM_JSONDATA</pre>
-<div class="block">リクエストパラメータ名(JSONデータコンテナ)</div>
+static final&nbsp;java.lang.String EATTR_UNION_FUNCTION</pre>
+<div class="block">要素属性(対象機能名)</div>
 <dl>
 <dt><span class="seeLabel">関連項目:</span></dt>
-<dd><a href="../../../../../constant-values.html#org.ideaccum.union.controller.basic.UnionControllerBasicConstants.REQPARAM_JSONDATA">定数フィールド値</a></dd>
+<dd><a href="../../../../../constant-values.html#org.ideaccum.union.controller.basic.UnionControllerBasicConstants.EATTR_UNION_FUNCTION">定数フィールド値</a></dd>
 </dl>
 </li>
 </ul>

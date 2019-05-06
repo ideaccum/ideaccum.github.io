@@ -18,12 +18,6 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
-var tabs = {65535:["t0","すべてのメソッド"],2:["t2","インスタンス・メソッド"],8:["t4","concreteメソッド"]};
-var altColor = "altColor";
-var rowColor = "rowColor";
-var tableTab = "tableTab";
-var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>ブラウザのJavaScriptが無効になっています。</div>
@@ -77,13 +71,13 @@ var activeTableTab = "activeTableTab";
 <li>ネスト&nbsp;|&nbsp;</li>
 <li><a href="#fields.inherited.from.class.org.ideaccum.union.controller.basic.processor.AbstractTag">フィールド</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">コンストラクタ</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.summary">メソッド</a></li>
+<li><a href="#methods.inherited.from.class.org.ideaccum.union.controller.basic.taglib.HtmlTag">メソッド</a></li>
 </ul>
 <ul class="subNavList">
 <li>詳細:&nbsp;</li>
 <li>フィールド&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">コンストラクタ</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">メソッド</a></li>
+<li>メソッド</li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -106,7 +100,7 @@ var activeTableTab = "activeTableTab";
 <li>org.ideaccum.union.controller.basic.processor.AbstractTag</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../org/ideaccum/union/ui/bootstrap4/taglib/AbstractComponentTag.html" title="org.ideaccum.union.ui.bootstrap4.taglib内のクラス">org.ideaccum.union.ui.bootstrap4.taglib.AbstractComponentTag</a></li>
+<li>org.ideaccum.union.controller.basic.taglib.HtmlTag</li>
 <li>
 <ul class="inheritance">
 <li>org.ideaccum.union.ui.bootstrap4.taglib.HtmlTag</li>
@@ -124,13 +118,16 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>すべての実装されたインタフェース:</dt>
-<dd>java.io.Serializable, javax.servlet.jsp.tagext.IterationTag, javax.servlet.jsp.tagext.JspTag, javax.servlet.jsp.tagext.Tag, <a href="../../../../../../org/ideaccum/union/ui/bootstrap4/UnionUIBootstrap4Constants.html" title="org.ideaccum.union.ui.bootstrap4内のインタフェース">UnionUIBootstrap4Constants</a>, org.ideaccum.union.UnionConstants</dd>
+<dd>java.io.Serializable, javax.servlet.jsp.tagext.IterationTag, javax.servlet.jsp.tagext.JspTag, javax.servlet.jsp.tagext.Tag, org.ideaccum.union.controller.basic.UnionControllerBasicConstants, org.ideaccum.union.UnionConstants</dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">HtmlTag</span>
-extends <a href="../../../../../../org/ideaccum/union/ui/bootstrap4/taglib/AbstractComponentTag.html" title="org.ideaccum.union.ui.bootstrap4.taglib内のクラス">AbstractComponentTag</a></pre>
-<div class="block">フレームワークが提供する共通的な要素属性と共に構成されるHTMLタグ生成処理を提供します。<br></div>
+extends org.ideaccum.union.controller.basic.taglib.HtmlTag</pre>
+<div class="block">フレームワークが提供する共通的な要素属性と共に構成されるHTMLタグ生成処理を提供します。<br>
+ <p>
+ このプラグインモジュールが読み込まれるとタグリブでは、<code>HtmlTag</code>が提供するラグリブではなく、このクラスを利用します。<br>
+ </p></div>
 <dl>
 <dt><span class="simpleTagLabel">作成者:</span></dt>
 <dd>Kitagawa<br>
@@ -169,18 +166,18 @@ extends <a href="../../../../../../org/ideaccum/union/ui/bootstrap4/taglib/Abstr
 <code>id, pageContext</code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.org.ideaccum.union.ui.bootstrap4.UnionUIBootstrap4Constants">
+<li class="blockList"><a name="fields.inherited.from.class.org.ideaccum.union.controller.basic.UnionControllerBasicConstants">
 <!--   -->
 </a>
-<h3>インタフェースから継承されたフィールド&nbsp;org.ideaccum.union.ui.bootstrap4.<a href="../../../../../../org/ideaccum/union/ui/bootstrap4/UnionUIBootstrap4Constants.html" title="org.ideaccum.union.ui.bootstrap4内のインタフェース">UnionUIBootstrap4Constants</a></h3>
-<code><a href="../../../../../../org/ideaccum/union/ui/bootstrap4/UnionUIBootstrap4Constants.html#FIXEDHEADER_ZINDEX">FIXEDHEADER_ZINDEX</a>, <a href="../../../../../../org/ideaccum/union/ui/bootstrap4/UnionUIBootstrap4Constants.html#LAYER_ZINDEX">LAYER_ZINDEX</a>, <a href="../../../../../../org/ideaccum/union/ui/bootstrap4/UnionUIBootstrap4Constants.html#SCRIPT_REQUEST_METHOD">SCRIPT_REQUEST_METHOD</a>, <a href="../../../../../../org/ideaccum/union/ui/bootstrap4/UnionUIBootstrap4Constants.html#SCRIPT_REQUEST_TIMEOUT">SCRIPT_REQUEST_TIMEOUT</a></code></li>
+<h3>インタフェースから継承されたフィールド&nbsp;org.ideaccum.union.controller.basic.UnionControllerBasicConstants</h3>
+<code>EATTR_UNION_FUNCTION, EATTR_UNION_TYPE, RATTR_SESSION, RPARAM_JSONDATA, SCRIPT_REQUEST_METHOD, SCRIPT_REQUEST_TIMEOUT, UNION_ACTION_CLASSNAME_SUFFIX, UNION_ACTIONNAME_DISPLAY, UNION_FORM_CLASSNAME_SUFFIX, UNION_LOGIC_CLASSNAME_SUFFIX, UNION_PSID</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.org.ideaccum.union.UnionConstants">
 <!--   -->
 </a>
 <h3>インタフェースから継承されたフィールド&nbsp;org.ideaccum.union.UnionConstants</h3>
-<code>UNION_CONFIG, UNION_DEFAULT_USER_CONFIG, UNION_JSP_ERROR_404, UNION_JSP_REDIRECTOR, UNION_JSP_TAGLIBS, UNION_LISTEN_PATH, UNION_MESSAGE, UNION_RESOURCE_PATH</code></li>
+<code>UNION_BUNDLE_LOGBACK, UNION_CONFIG, UNION_DEFAULT_USER_CONFIG, UNION_JSP_PAGE_ILLEGAL_ACCESS, UNION_JSP_PAGE_NOT_FOUND, UNION_JSP_PAGE_TIMEOUT, UNION_JSP_REDIRECTOR, UNION_JSP_TAGLIBS, UNION_LISTEN_PATH, UNION_MESSAGE, UNION_RESOURCE_PATH</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="fields.inherited.from.class.javax.servlet.jsp.tagext.IterationTag">
@@ -223,31 +220,12 @@ extends <a href="../../../../../../org/ideaccum/union/ui/bootstrap4/taglib/Abstr
 <!--   -->
 </a>
 <h3>メソッドのサマリー</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="メソッドのサマリー表、メソッドのリストおよび説明">
-<caption><span id="t0" class="activeTableTab"><span>すべてのメソッド</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">インスタンス・メソッド</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">concreteメソッド</a></span><span class="tabEnd">&nbsp;</span></span></caption>
-<tr>
-<th class="colFirst" scope="col">修飾子とタイプ</th>
-<th class="colLast" scope="col">メソッドと説明</th>
-</tr>
-<tr id="i0" class="altColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../org/ideaccum/union/ui/bootstrap4/taglib/HtmlTag.html#doEndTag--">doEndTag</a></span>()</code>
-<div class="block">終了タグを出力します。</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../org/ideaccum/union/ui/bootstrap4/taglib/HtmlTag.html#doStartTag--">doStartTag</a></span>()</code>
-<div class="block">開始タグを出力します。</div>
-</td>
-</tr>
-</table>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.org.ideaccum.union.ui.bootstrap4.taglib.AbstractComponentTag">
+<li class="blockList"><a name="methods.inherited.from.class.org.ideaccum.union.controller.basic.taglib.HtmlTag">
 <!--   -->
 </a>
-<h3>クラスから継承されたメソッド&nbsp;org.ideaccum.union.ui.bootstrap4.taglib.<a href="../../../../../../org/ideaccum/union/ui/bootstrap4/taglib/AbstractComponentTag.html" title="org.ideaccum.union.ui.bootstrap4.taglib内のクラス">AbstractComponentTag</a></h3>
-<code><a href="../../../../../../org/ideaccum/union/ui/bootstrap4/taglib/AbstractComponentTag.html#getParentFormFunctionId--">getParentFormFunctionId</a>, <a href="../../../../../../org/ideaccum/union/ui/bootstrap4/taglib/AbstractComponentTag.html#getParentFormTag--">getParentFormTag</a></code></li>
+<h3>クラスから継承されたメソッド&nbsp;org.ideaccum.union.controller.basic.taglib.HtmlTag</h3>
+<code>createHtmlBuilder, doEndTag, doStartTag</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.ideaccum.union.controller.basic.processor.AbstractTag">
@@ -292,60 +270,6 @@ extends <a href="../../../../../../org/ideaccum/union/ui/bootstrap4/taglib/Abstr
 <h4>HtmlTag</h4>
 <pre>public&nbsp;HtmlTag()</pre>
 <div class="block">コンストラクタ<br></div>
-</li>
-</ul>
-</li>
-</ul>
-<!-- ============ METHOD DETAIL ========== -->
-<ul class="blockList">
-<li class="blockList"><a name="method.detail">
-<!--   -->
-</a>
-<h3>メソッドの詳細</h3>
-<a name="doStartTag--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>doStartTag</h4>
-<pre>public&nbsp;int&nbsp;doStartTag()
-               throws javax.servlet.jsp.JspException</pre>
-<div class="block">開始タグを出力します。<br></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">定義:</span></dt>
-<dd><code>doStartTag</code>&nbsp;インタフェース内&nbsp;<code>javax.servlet.jsp.tagext.Tag</code></dd>
-<dt><span class="overrideSpecifyLabel">オーバーライド:</span></dt>
-<dd><code>doStartTag</code>&nbsp;クラス内&nbsp;<code>javax.servlet.jsp.tagext.TagSupport</code></dd>
-<dt><span class="returnLabel">戻り値:</span></dt>
-<dd>タグ出力後動作タイプ</dd>
-<dt><span class="throwsLabel">例外:</span></dt>
-<dd><code>javax.servlet.jsp.JspException</code></dd>
-<dt><span class="seeLabel">関連項目:</span></dt>
-<dd><code>TagSupport.doStartTag()</code></dd>
-</dl>
-</li>
-</ul>
-<a name="doEndTag--">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>doEndTag</h4>
-<pre>public&nbsp;int&nbsp;doEndTag()
-             throws javax.servlet.jsp.JspException</pre>
-<div class="block">終了タグを出力します。<br></div>
-<dl>
-<dt><span class="overrideSpecifyLabel">定義:</span></dt>
-<dd><code>doEndTag</code>&nbsp;インタフェース内&nbsp;<code>javax.servlet.jsp.tagext.Tag</code></dd>
-<dt><span class="overrideSpecifyLabel">オーバーライド:</span></dt>
-<dd><code>doEndTag</code>&nbsp;クラス内&nbsp;<code>javax.servlet.jsp.tagext.TagSupport</code></dd>
-<dt><span class="returnLabel">戻り値:</span></dt>
-<dd>タグ出力後動作タイプ</dd>
-<dt><span class="throwsLabel">例外:</span></dt>
-<dd><code>javax.servlet.jsp.JspException</code></dd>
-<dt><span class="seeLabel">関連項目:</span></dt>
-<dd><code>TagSupport.doEndTag()</code></dd>
-</dl>
 </li>
 </ul>
 </li>
@@ -404,13 +328,13 @@ extends <a href="../../../../../../org/ideaccum/union/ui/bootstrap4/taglib/Abstr
 <li>ネスト&nbsp;|&nbsp;</li>
 <li><a href="#fields.inherited.from.class.org.ideaccum.union.controller.basic.processor.AbstractTag">フィールド</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">コンストラクタ</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.summary">メソッド</a></li>
+<li><a href="#methods.inherited.from.class.org.ideaccum.union.controller.basic.taglib.HtmlTag">メソッド</a></li>
 </ul>
 <ul class="subNavList">
 <li>詳細:&nbsp;</li>
 <li>フィールド&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">コンストラクタ</a>&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">メソッド</a></li>
+<li>メソッド</li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">
