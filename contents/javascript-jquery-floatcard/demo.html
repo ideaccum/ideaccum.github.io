@@ -1,0 +1,460 @@
+<!doctype html>
+<html>
+
+<head>
+
+<title>Ideaccum - jQuery Floatcard Plugin</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="apple-touch-icon" href="../../images/favicon.png">
+<link rel="icon" href="../../images/favicon.png" type="image/png">
+
+<script type="text/javascript" src="../../libs/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+
+<link rel="stylesheet" href="../../libs/bootstrap-4.3.1/css/bootstrap.min.css">
+<script type="text/javascript" src="../../libs/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../../libs/google-code-prettify-4-Mar-2013/styles/desert.css">
+<script type="text/javascript" src="../../libs/google-code-prettify-4-Mar-2013/prettify.js"></script>
+
+<link rel="stylesheet" type="text/css" href="jquery.floatcard.css">
+<script type="text/javascript" src="jquery.floatcard.js"></script>
+
+<style>
+body {
+	padding-top: 3.5rem;
+}
+
+pre.prettyprint {
+	padding-top: 1.5rem;
+}
+
+.header {
+	padding: 2rem 2rem 2rem 2rem;
+	margin-bottom: 2rem;
+	background-color: #e9ecef;
+}
+
+.subheader {
+	padding: 2rem 2rem .5rem 2rem;
+}
+
+.footer {
+	padding: 2rem 2rem 2rem 2rem;
+	margin-bottom: 2rem 0 0 0;
+	background-color: #e9ecef;
+	text-align: center;
+}
+
+.container {
+	border: none;
+}
+
+.button {
+	cursor: pointer;
+}
+</style>
+
+<script type="text/javascript">
+	$(function() {
+		prettyPrint();
+	});
+</script>
+
+<!-- ********************************************************************************************************************** -->
+
+<style type="text/css">
+.testStyle1 {
+	color: blue;
+}
+
+.testStyle2 {
+	color: red;
+}
+</style>
+
+<script type="text/javascript">
+	$(function() {
+		$("#testSimple").bind("click", function() {
+			$.floatcard("単純なメッセージ表示");
+		});
+		$("#testBlock").bind("click", function() {
+			$("#testBlockElement").floatcard();
+		});
+		$("#testAutoHide").bind("click", function() {
+			$.floatcard("一定時間で消えるメッセージ", {
+				autoHide : true,
+				autoHideDelay : 2000
+			});
+		});
+		$("#testPositionRT").bind("click", function() {
+			$.floatcard("右上", {
+				position : "right-top"
+			});
+		});
+		$("#testPositionRB").bind("click", function() {
+			$.floatcard("右下", {
+				position : "right-bottom"
+			});
+		});
+		$("#testPositionLT").bind("click", function() {
+			$.floatcard("左上", {
+				position : "left-top"
+			});
+		});
+		$("#testPositionLB").bind("click", function() {
+			$.floatcard("左下", {
+				position : "left-bottom"
+			});
+		});
+		$("#testPositionCT").bind("click", function() {
+			$.floatcard("中央上", {
+				position : "center-top"
+			});
+		});
+		$("#testPositionCB").bind("click", function() {
+			$.floatcard("中央下", {
+				position : "center-bottom"
+			});
+		});
+		$("#testPositionFT").bind("click", function() {
+			$.floatcard("画面上", {
+				position : "fill-top"
+			});
+		});
+		$("#testPositionFB").bind("click", function() {
+			$.floatcard("画面下", {
+				position : "fill-bottom"
+			});
+		});
+		$("#testStateDefalut").bind("click", function() {
+			$.floatcard("ディフォルト", {
+				state : "default"
+			});
+		});
+		$("#testStateFatal").bind("click", function() {
+			$.floatcard("致命的", {
+				state : "fatal"
+			});
+		});
+		$("#testStateError").bind("click", function() {
+			$.floatcard("エラー", {
+				state : "error"
+			});
+		});
+		$("#testStateWarn").bind("click", function() {
+			$.floatcard("警告", {
+				state : "warn"
+			});
+		});
+		$("#testStateInfo").bind("click", function() {
+			$.floatcard("情報", {
+				state : "info"
+			});
+		});
+		$("#testStyle1").bind("click", function() {
+			$.floatcard("スタイル1", {
+				styleClass : "testStyle1"
+			});
+		});
+		$("#testStyle2").bind("click", function() {
+			$.floatcard("スタイル2", {
+				styleClass : "testStyle2"
+			});
+		});
+		$("#testZIndex").bind("click", function() {
+			$.floatcard("メッセージ", {
+				zIndex : 10000
+			});
+		});
+		$("#testContainer").bind("click", function() {
+			$.floatcard("メッセージ", {
+				container : "#testContainerElement"
+			});
+		});
+	});
+</script>
+
+<!-- ********************************************************************************************************************** -->
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<a class="navbar-brand" href="#">jQuery Floatcard Plugin</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item home"><a class="nav-link" href="./index.html">Home</a></li>
+				<li class="nav-item documentation"><a class="nav-link" href="./documentation.html">Documentation</a></li>
+				<li class="nav-item demo active"><a class="nav-link" href="./demo.html">Demo</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- ********************************************************************************************************************** -->
+
+	<div class="subheader">
+		<h1 class="display-4">Demo</h1>
+		<p class="lead">jQuery Floatcard Pluginの利用方法とその動作デモです。</p>
+	</div>
+
+	<div class="container">
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<h2>単純なメッセージ表示</h2>
+				<p>
+					一番シンプルな使用方法は表示したい文字列のみをパラメータとして指定して実行します。
+					<br>
+					表示位置などはすべて初期値が適用され、右上に追加した順序でメッセージが表示されます。
+				</p>
+				<div class="btn btn-sm btn-secondary my-2 button" id="testSimple">動作確認</div>
+				<pre class="prettyprint lang-js">
+  $.floatcard("単純なメッセージ表示");
+			</pre>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<h2>ブロック要素を利用した表示</h2>
+				<p>
+					任意のブロック要素のセレクタを指定して取得したjQueryオブジェクトをフロート表示します。
+					<br>
+					ブロック要素はクローンされた状態埋め込まれますが、オプション(clone)を明示的に指定することで元のブロック要素をそのまま埋め込むことも可能です。
+				</p>
+				<div style="border: 1px solid #888; background-color: #e0eCf8; margin: 10px; padding: 10px; width: 40rem;" id="testBlockElement">
+					<div style="display: inline-block;">
+						<img src="../../images/favicon.png" style="width: 2rem; height: 2rem; vertical-align: middle; margin-right: 10px;">
+						<p style="display: inline-block; margin: 0; line-height: 1rem; vertical-align: middle;">
+							このブロック要素をフロート表示要素の内容として利用します。
+							<br>
+							ブロック要素内の内容は任意の内容を配置して利用します。
+						</p>
+					</div>
+				</div>
+				<div class="btn btn-sm btn-secondary my-2 button" id="testBlock">動作確認</div>
+				<pre class="prettyprint lang-html">
+  &lt;div id="testBlockElement"&gt;
+    ...
+  &lt;/div&gt;
+			</pre>
+				<pre class="prettyprint lang-js">
+  $("#testBlockElement").floatcard();
+			</pre>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<h2>一定時間で自動消去</h2>
+				<p>
+					autoHideオプション指定によって、ユーザーによる閉じる操作がない場合に一定時間でメッセージが自動消去されます。
+					<br>
+					自動消去されるまでの時間はautoHideDelayオプションによって、ディフォルト値から任意の時間に変更することが可能です。
+					<br>
+				</p>
+				<div class="btn btn-sm btn-secondary my-2 button" id="testAutoHide">動作確認</div>
+				<pre class="prettyprint lang-js">
+  $.floatcard("一定時間で消えるメッセージ", {
+    autoHide: true, 
+    autoHideDelay: 2000
+  });
+			</pre>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<h2>表示位置を指定して表示</h2>
+				<p>
+					positionオプションで右上、右下、左上、左下、中央上、中央下、画面上、画面下を指定できます。
+					<br>
+					要素の追加方向は上側配置の場合は下方向に、下側配置の場合は上方向に追加されます。
+				</p>
+				<div class="btn btn-sm btn-secondary my-2 button" id="testPositionRT">右上</div>
+				<div class="btn btn-sm btn-secondary my-2 button" id="testPositionRB">右下</div>
+				<div class="btn btn-sm btn-secondary my-2 button" id="testPositionLT">左上</div>
+				<div class="btn btn-sm btn-secondary my-2 button" id="testPositionLB">左下</div>
+				<div class="btn btn-sm btn-secondary my-2 button" id="testPositionCT">中央上</div>
+				<div class="btn btn-sm btn-secondary my-2 button" id="testPositionCB">中央下</div>
+				<div class="btn btn-sm btn-secondary my-2 button" id="testPositionFT">画面上</div>
+				<div class="btn btn-sm btn-secondary my-2 button" id="testPositionFB">画面下</div>
+				<pre class="prettyprint lang-js">
+  $("#testPositionRT").bind("click", function() {
+    $.floatcard("右上", {
+      position : "right-top"
+    });
+  });
+  $("#testPositionRB").bind("click", function() {
+    $.floatcard("右下", {
+      position : "right-bottom"
+    });
+  });
+  $("#testPositionLT").bind("click", function() {
+    $.floatcard("左上", {
+      position : "left-top"
+    });
+  });
+  $("#testPositionLB").bind("click", function() {
+    $.floatcard("左下", {
+      position : "left-bottom"
+    });
+  });
+  $("#testPositionCT").bind("click", function() {
+    $.floatcard("中央上", {
+      position : "center-top"
+    });
+  });
+  $("#testPositionCB").bind("click", function() {
+    $.floatcard("中央下", {
+      position : "center-bottom"
+    });
+  });
+  $("#testPositionFT").bind("click", function() {
+    $.floatcard("画面上", {
+      position : "fill-top"
+    });
+  });
+  $("#testPositionFB").bind("click", function() {
+    $.floatcard("画面下", {
+      position : "fill-bottom"
+    });
+  });
+			</pre>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<h2>レベルを指定して表示</h2>
+				<p>
+					フロート表示要素はstateオプションによって状態レベルごとのスタイルを提供して表示できます。
+					<br>
+					状態レベルはディフォルト、致命的、エラー、警告、情報が提供されます。
+					<br>
+				</p>
+				<div class="btn btn-sm btn-secondary my-2 button" id="testStateDefalut">ディフォルト</div>
+				<div class="btn btn-sm btn-secondary my-2 button" id="testStateFatal">致命的</div>
+				<div class="btn btn-sm btn-secondary my-2 button" id="testStateError">エラー</div>
+				<div class="btn btn-sm btn-secondary my-2 button" id="testStateWarn">警告</div>
+				<div class="btn btn-sm btn-secondary my-2 button" id="testStateInfo">情報</div>
+				<pre class="prettyprint lang-js">
+  $("#testStateDefalut").bind("click", function() {
+    $.floatcard("ディフォルト", {
+      state : "default"
+    });
+  });
+  $("#testStateFatal").bind("click", function() {
+    $.floatcard("致命的", {
+      state : "fatal"
+    });
+  });
+  $("#testStateError").bind("click", function() {
+    $.floatcard("エラー", {
+      state : "error"
+    });
+  });
+  $("#testStateWarn").bind("click", function() {
+    $.floatcard("警告", {
+      state : "warn"
+    });
+  });
+  $("#testStateInfo").bind("click", function() {
+    $.floatcard("情報", {
+      state : "info"
+    });
+  });
+			</pre>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<h2>任意スタイルクラスを適用して表示</h2>
+				<p>
+					状態レベルとして提供されるスタイル以外の任意のスタイルクラスを適用することができます。
+					<br>
+					このスタイルはディフォルト状態スタイルが提供されたうえで追加適用されます。
+				</p>
+				<div class="btn btn-sm btn-secondary my-2 button" id="testStyle1">スタイル1</div>
+				<div class="btn btn-sm btn-secondary my-2 button" id="testStyle2">スタイル2</div>
+				<pre class="prettyprint lang-css">
+  .testStyle1 {
+    color: blue;
+  }
+
+  .testStyle2 {
+    color: red;
+  }
+			</pre>
+				<pre class="prettyprint lang-js">
+  $("#testStateDefalut").bind("click", function() {
+    $.floatcard("スタイル1", {
+      styleClass : "testStyle1"
+    });
+  });
+  $("#testStateFatal").bind("click", function() {
+    $.floatcard("スタイル2", {
+      styleClass : "testStyle2"
+    });
+  });
+			</pre>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<h2>任意のz-indexで表示</h2>
+				<p>
+					コンテンツページによってフロート表示のz-index調整が必要な場合は、zIndexオプションで指定が可能です。
+					<br>
+				</p>
+				<div class="btn btn-sm btn-secondary my-2 button" id="testZIndex">動作確認</div>
+				<pre class="prettyprint lang-js">
+  $("#testZIndex").bind("click", function() {
+    $.floatcard("メッセージ", {
+      zIndex : 10000
+    });
+  });
+			</pre>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<h2>body以外のコンテナに表示</h2>
+				<p>
+					containerオプションによってbodyタグ以外のコンテナ要素配下に表示要素を追加できます。
+					<br>
+					フロート要素はposition:absoluteで追加される為、配置先要素はposition:staticを指定することは出来ません。
+				</p>
+				<div style="border: 1px solid #888; background-color: #eee; margin: 0; padding: 10px; position: relative; height: 10rem; overflow: scroll;" id="testContainerElement">任意のコンテナ要素内部にメッセージ等を追加することができます。</div>
+				<div class="btn btn-sm btn-secondary my-2 button" id="testContainer">動作確認</div>
+				<pre class="prettyprint lang-js">
+  $("#testContainer").bind("click", function() {
+    $.floatcard("メッセージ", {
+      container : "#testContainerElement"
+    });
+  });
+			</pre>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- ********************************************************************************************************************** -->
+
+	<footer class="footer">
+		<p>Copyright &copy; 2019 Hisanori Kitagawa</p>
+	</footer>
+
+</body>
+</html>

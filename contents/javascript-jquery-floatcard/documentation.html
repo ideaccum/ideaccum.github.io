@@ -1,0 +1,326 @@
+<!doctype html>
+<html>
+
+<head>
+
+<title>Ideaccum - jQuery Floatcard Plugin</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="apple-touch-icon" href="../../images/favicon.png">
+<link rel="icon" href="../../images/favicon.png" type="image/png">
+
+<script type="text/javascript" src="../../libs/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+
+<link rel="stylesheet" href="../../libs/bootstrap-4.3.1/css/bootstrap.min.css">
+<script type="text/javascript" src="../../libs/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../../libs/google-code-prettify-4-Mar-2013/styles/desert.css">
+<script type="text/javascript" src="../../libs/google-code-prettify-4-Mar-2013/prettify.js"></script>
+
+<link rel="stylesheet" type="text/css" href="jquery.floatcard.css">
+<script type="text/javascript" src="jquery.floatcard.js"></script>
+
+<style>
+body {
+	padding-top: 3.5rem;
+}
+
+pre.prettyprint {
+	padding-top: 1.5rem;
+}
+
+.header {
+	padding: 2rem 2rem 2rem 2rem;
+	margin-bottom: 2rem;
+	background-color: #e9ecef;
+}
+
+.subheader {
+	padding: 2rem 2rem .5rem 2rem;
+}
+
+.footer {
+	padding: 2rem 2rem 2rem 2rem;
+	margin-bottom: 2rem 0 0 0;
+	background-color: #e9ecef;
+	text-align: center;
+}
+
+.container {
+	border: none;
+}
+
+.button {
+	cursor: pointer;
+}
+</style>
+
+<script type="text/javascript">
+	$(function() {
+		prettyPrint();
+	});
+</script>
+
+<!-- ********************************************************************************************************************** -->
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<a class="navbar-brand" href="#">jQuery Floatcard Plugin</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item home"><a class="nav-link" href="./index.html">Home</a></li>
+				<li class="nav-item documentation active"><a class="nav-link" href="./documentation.html">Documentation</a></li>
+				<li class="nav-item demo"><a class="nav-link" href="./demo.html">Demo</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- ********************************************************************************************************************** -->
+
+	<div class="subheader">
+		<h1 class="display-4">Documentation</h1>
+		<p class="lead">jQuery Floatcard PluginのAPI仕様です。</p>
+	</div>
+
+	<div class="container">
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<h2>オプション</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h4>autoHide</h4>
+				<table class="table table-sm table-bordered">
+					<colgroup>
+						<col style="width: 8rem;" />
+						<col style="" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<td class="bg-secondary text-white">Type</td>
+							<td>Boolean</td>
+						</tr>
+						<tr>
+							<td class="bg-secondary text-white">Default</td>
+							<td>false</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					trueを指定した場合、フロート要素表示後に一定時間が経過したタイミングで自動的に表示要素を消去します。
+					<br>
+					自動消去するまでの時間は、autoHideDelayオプションで任意の時間を指定できます。
+					<br>
+				</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<h4>autoHideDelay</h4>
+				<table class="table table-sm table-bordered">
+					<colgroup>
+						<col style="width: 8rem;" />
+						<col style="" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<td class="bg-secondary text-white">Type</td>
+							<td>Number</td>
+						</tr>
+						<tr>
+							<td class="bg-secondary text-white">Default</td>
+							<td>5000</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					autoHideがtrueの場合に有効なオプションで、自動消去までの時間をミリ秒で指定します。
+					<br>
+				</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<h4>clone</h4>
+				<table class="table table-sm table-bordered">
+					<colgroup>
+						<col style="width: 8rem;" />
+						<col style="" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<td class="bg-secondary text-white">Type</td>
+							<td>Boolean</td>
+						</tr>
+						<tr>
+							<td class="bg-secondary text-white">Default</td>
+							<td>true</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					ブロック要素を指定して利用する場合に対象ブロック要素をクローンしてからフロート表示するかを指定します。
+					<br>
+					フロート表示要素に元の要素をそのまま埋め込む場合にはこのオプションでfalseを指定します。
+				</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<h4>position</h4>
+				<table class="table table-sm table-bordered">
+					<colgroup>
+						<col style="width: 8rem;" />
+						<col style="" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<td class="bg-secondary text-white">Type</td>
+							<td>"right-top", "right-bottom", "left-top", "left-bottom", "center-top", "center-bottom", "fill-top", "fill-bottom"</td>
+						</tr>
+						<tr>
+							<td class="bg-secondary text-white">Default</td>
+							<td>"right-top"</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					フロート表示する位置を右上("right-top")、右下("right-bottom")、左上("left-top")、左下("left-bottom")、中央上("center-top")、中央下("center-bottom")、画面上("fill-top")、画面下("fill-bottom")で指定します。
+					<br>
+					要素の追加方向は上側配置の場合は下方向に、下側配置の場合は上方向に追加されます。
+				</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<h4>state</h4>
+				<table class="table table-sm table-bordered">
+					<colgroup>
+						<col style="width: 8rem;" />
+						<col style="" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<td class="bg-secondary text-white">Type</td>
+							<td>"default", "fatal", "error", "warn", "info"</td>
+						</tr>
+						<tr>
+							<td class="bg-secondary text-white">Default</td>
+							<td>"default"</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					フロート表示要素に適用するライブラリが提供する状態スタイルを指定します。
+					<br>
+					ライブラリが提供する状態スタイルは、ディフォルト("default")、致命的("fatal")、エラー("error")、警告("warn")、情報("info")となります。
+				</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<h4>styleClass</h4>
+				<table class="table table-sm table-bordered">
+					<colgroup>
+						<col style="width: 8rem;" />
+						<col style="" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<td class="bg-secondary text-white">Type</td>
+							<td>String</td>
+						</tr>
+						<tr>
+							<td class="bg-secondary text-white">Default</td>
+							<td>(undefined)</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					フロート表示要素に適用する任意のスタイルクラスを指定します。
+					<br>
+					ライブラリが提供する状態スタイル以外のスタイルを適用したい場合に自身で定義したスタイルクラスを適用することができます。
+				</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<h4>zIndex</h4>
+				<table class="table table-sm table-bordered">
+					<colgroup>
+						<col style="width: 8rem;" />
+						<col style="" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<td class="bg-secondary text-white">Type</td>
+							<td>Number</td>
+						</tr>
+						<tr>
+							<td class="bg-secondary text-white">Default</td>
+							<td>2000</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					フロート表示要素のz-index属性を指定します。
+					<br>
+					ページレイアウトやCSSフレームワーク等の関連で、個別にz-indexを指定したい場合に利用します。
+				</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-md-12">
+				<h4>container</h4>
+				<table class="table table-sm table-bordered">
+					<colgroup>
+						<col style="width: 8rem;" />
+						<col style="" />
+					</colgroup>
+					<tbody>
+						<tr>
+							<td class="bg-secondary text-white">Type</td>
+							<td>Object</td>
+						</tr>
+						<tr>
+							<td class="bg-secondary text-white">Default</td>
+							<td>(undefined)</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
+					フロート要素の追加対象コンテナ要素をbody以外の要素に対して行いたい場合に指定します。
+					<br>
+					パラメータはjQueryオブジェクト又は、セレクタ文字列で指定します。
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- ********************************************************************************************************************** -->
+
+	<footer class="footer">
+		<p>Copyright &copy; 2019 Hisanori Kitagawa</p>
+	</footer>
+
+</body>
+</html>
